@@ -1,31 +1,30 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import logo from '../assents/TopCarOnline_Logo.png'
-import Button from './Button'
 
 const Header = () => {
-    const [isHeaderVisible, setIsHeaderVisible] = useState(true)
-    const [lastScrolly, setLastScrolly] = useState(0)
+    const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+    const [lastScrolly, setLastScrolly] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const handleScroll = () => {
-        const currentScrolly = window.scrollY
+        const currentScrolly = window.scrollY;
 
         if (currentScrolly > lastScrolly && isHeaderVisible) {
-            setIsHeaderVisible(false)
+            setIsHeaderVisible(false);
         } else if (currentScrolly < lastScrolly && !isHeaderVisible) {
-            setIsHeaderVisible(true)
+            setIsHeaderVisible(true);
         }
 
-        setLastScrolly(currentScrolly)
-    }
+        setLastScrolly(currentScrolly);
+    };
 
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener('scroll', handleScroll)
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, [lastScrolly, isHeaderVisible])
+    }, [lastScrolly, isHeaderVisible]);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -37,8 +36,8 @@ const Header = () => {
             transition-transform duration-300 ease-in-out ${isHeaderVisible ? 'translate-y-0' : '-translate-y-40'} `}>
             <a href="/"><img src={logo} alt="LogoMarca" className='h-10 md:h-auto'/></a>
             <nav className='hidden md:flex space-x-10'>
-                <a className='text-h3  text-fourth hover:text-hover p-3 font-montserrat uppercase' href="/">Sobre Nós</a>
-                <a className='text-h3 text-fourth hover:text-hover p-3 font-montserrat uppercase' href="/">Entrar</a>
+                <a className='text-h3  text-fourth hover:text-hover p-3' href="/">Sobre Nós</a>
+                <a className='text-h3 text-fourth hover:text-hover p-3' href="/">Entrar</a>
             </nav>
             <button onClick={toggleMenu} className='md:hidden focus:outline-none text-fourth' aria-label='Abrir Menu'>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -52,8 +51,8 @@ const Header = () => {
              </nav>)}
         </header>
 
-    )
+    );
 
 }
 
-export default Header
+export default Header;
