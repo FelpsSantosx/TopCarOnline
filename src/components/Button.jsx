@@ -1,9 +1,9 @@
 import React from "react"
 
-const Button = ({ onClick, children, className = '', color = 'bg-secondv', ...props }) => {
+const Button = ({ onClick, children, className = '', color = 'bg-second', ...props }) => {
     return (
-        <button onClick={onClick} className={`${color} font-montserrat text-h3 rounded-lg 
-        text-primary hover:text-second hover:bg-primary p-3 ${className}`} {...props}>
+        <button onClick={onClick} className={`${color} font-montserrat text-h3 rounded-2xl 
+        text-primary hover:bg-black p-3 ${className}`} {...props}>
             {children}
         </button>
     )
