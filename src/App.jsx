@@ -19,11 +19,10 @@ function App() {
       <h5 className="text-h5 font-montserrat">Olá Mundo!</h5>
       <h5 className="text-h5 font-montserrat">Olá Mundo!</h5>
 
-      <div className="flex gap-16 items-center flex-wrap justify-center">
+      
         <Cards />
-        <Cards />
-        <Cards />
-      </div>
+       
+     
       <h1 className="text-h1 font-montserrat text-second">
         Olá Mundo!
       </h1>
