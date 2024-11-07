@@ -1,7 +1,6 @@
 import React from "react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import Cards from "./components/Cards"
 
 function App() {
 
@@ -18,10 +17,6 @@ function App() {
       <h4 className="text-h4 font-montserrat">Olá Mundo!</h4>
       <h5 className="text-h5 font-montserrat">Olá Mundo!</h5>
       <h5 className="text-h5 font-montserrat">Olá Mundo!</h5>
-
-      
-        <Cards />
-       
      
       <h1 className="text-h1 font-montserrat text-second">
         Olá Mundo!
