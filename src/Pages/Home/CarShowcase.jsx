@@ -1,0 +1,48 @@
+import React, { forwardRef } from "react"
+import Button from "../../components/Button"
+import Cards from "../../components/Cards"
+
+const CarShowcase = forwardRef ((props, ref) => {
+
+    return (
+        <section ref={ref} className="bg-black flex flex-col items-center justify-center">
+
+            <div className="flex flex-col md:flex-row items-center justify-center bg-second rounded-3xl px-10 md:px-16 py-4 md:py-6  my-10 gap-4 md:gap-16">
+
+                <span className="flex flex-row gap-1 md:gap-4 bg-gray-500 rounded-2xl pr-2 md:pr-4 ">
+                    <input type="search" name="searchBar" id="searchBar" placeholder="Pesquisar" className="rounded-2xl bg-white text-h5 md:text-h3 py-2 md:py-4 pl-4 md:pl-8"/>
+                    <button><img src="../src/assents/FiltroImg.png" alt="Filtro" /></button> 
+                </span>
+
+                <Button className="text-h5 md:text-h3 px-8" color="bg-primary text-second hover:text-primary">
+                    Veja Ofertas
+                </Button>
+
+            </div>
+
+            <div>
+                <h1 className="text-h3 md:text-h1 text-primary">CARROS EM OFERTAS</h1>
+            </div>
+
+            <div className="flex flex-col md:flex-row justify-center flex-wrap gap-4 py-4 md:py-8 md:m-12 rounded-md md:rounded-2xl bg-white">
+
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+
+                <div>
+                    
+                </div>
+
+            </div>
+
+        </section>
+    )
+
+})
+
+export default CarShowcase
+

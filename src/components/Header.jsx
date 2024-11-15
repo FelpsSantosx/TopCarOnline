@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import logo from '../assents/TopCarOnline_Logo.png'
 
 const Header = () => {
     const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-    const [lastScrolly, setLastScrolly] = useState(0);
+    const [lastScrolly, setLastScrolly] = useState(0)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const handleScroll = () => {
-        const currentScrolly = window.scrollY;
+        const currentScrolly = window.scrollY
 
         if (currentScrolly > lastScrolly && isHeaderVisible) {
-            setIsHeaderVisible(false);
+            setIsHeaderVisible(false)
         } else if (currentScrolly < lastScrolly && !isHeaderVisible) {
-            setIsHeaderVisible(true);
+            setIsHeaderVisible(true)
         }
 
         setLastScrolly(currentScrolly);
-    };
+    }
 
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [lastScrolly, isHeaderVisible]);
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [lastScrolly, isHeaderVisible])
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -34,7 +34,7 @@ const Header = () => {
 
         <header className={`flex items-center justify-between fixed md:top-2 md:left-40 md:right-40 w-full md:w-auto py-2 md:py-1 px-5 md:px-10 md:rounded-lg bg-second text-fourth
             transition-transform duration-300 ease-in-out ${isHeaderVisible ? 'translate-y-0' : '-translate-y-40'} `}>
-            <a href="/"><img src={logo} alt="LogoMarca" className='h-10 md:h-auto'/></a>
+            <a href="/"><img src={logo} alt="LogoMarca" className='h-10 md:h-auto' /></a>
             <nav className='hidden md:flex space-x-10'>
                 <a className='text-h3  text-fourth hover:text-hover p-3' href="/">Sobre Nós</a>
                 <a className='text-h3 text-fourth hover:text-hover p-3' href="/">Entrar</a>
@@ -46,12 +46,12 @@ const Header = () => {
             </button>
 
             {isMenuOpen && (<nav className="absolute top-10 right-0 bg-second text-fourth p-5 shadow-lg flex flex-col space-y-4 md:hidden">
-                 <a className='text-h3 hover:text-hover' href="/">Entrar</a>
-                 <a className='text-h3 hover:text-hover' href="/">Sobre Nós</a>
-             </nav>)}
+                <a className='text-h3 hover:text-hover' href="/">Entrar</a>
+                <a className='text-h3 hover:text-hover' href="/">Sobre Nós</a>
+            </nav>)}
         </header>
 
-    );
+    )
 
 }
 
