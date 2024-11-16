@@ -2,7 +2,8 @@ import React from "react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import Home from "./Pages/Home/Home"
+import Home from "./Pages/Home"
+import About from "./Pages/about"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Routes>
 
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
 
         </Routes>
 

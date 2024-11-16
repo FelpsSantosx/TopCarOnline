@@ -7,7 +7,7 @@ import Cards from "../../components/Cards"
 const CarShowcase = forwardRef((props, ref) => {
 
     return (
-        <section ref={ref} className="bg-black flex flex-col items-center justify-center">
+        <section ref={ref} className="bg-black flex flex-col items-center justify-center font-montserrat">
 
             <div className="flex flex-col md:flex-row items-center justify-center bg-second rounded-3xl px-10 md:px-16 py-4 md:py-6  my-10 gap-4 md:gap-16">
 
@@ -26,7 +26,7 @@ const CarShowcase = forwardRef((props, ref) => {
                 <h1 className="text-h3 md:text-h1 text-primary">CARROS EM OFERTAS</h1>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-center flex-wrap gap-4 py-4 md:py-8 my-8 md:m-12 rounded-md md:rounded-2xl bg-white">
+            <div className="flex flex-col md:flex-row justify-center flex-wrap gap-4 py-4 md:p-8 my-8 md:m-12 rounded-md md:rounded-2xl bg-white">
 
                 <Cards />
                 <Cards />
