@@ -4,11 +4,11 @@ const CarouselMarca = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const images = [
-    "../src/assents/BmwLogo.png",
-    "../src/assents/BmwLogo.png",
-    "../src/assents/BmwLogo.png",
-    "../src/assents/BmwLogo.png",
-    "../src/assents/BmwLogo.png",
+    "../src/assets/BmwLogo.png",
+    "../src/assets/BmwLogo.png",
+    "../src/assets/BmwLogo.png",
+    "../src/assets/BmwLogo.png",
+    "../src/assets/BmwLogo.png",
   ]
 
   const visibleSlides = 3

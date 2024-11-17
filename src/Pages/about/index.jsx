@@ -7,12 +7,10 @@ const About = () => {
   return (
 
     <div className="bg-primary">
-
       <AboutUs />
       <Mission />
       <HistoryAndvalor />
       <Info />
-
     </div>
 
   )

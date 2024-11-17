@@ -15,10 +15,8 @@ const Home = () => {
 
     return (
         <>
-        
             <HeroSection scrollToCarShowcase={scrollToCarShowcase}/>
             <CarShowcase ref={carShowcaseRef} />
-
         </>
     )
 

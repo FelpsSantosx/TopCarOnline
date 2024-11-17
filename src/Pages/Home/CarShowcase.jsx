@@ -13,7 +13,7 @@ const CarShowcase = forwardRef((props, ref) => {
 
                 <span className="flex flex-row gap-1 md:gap-4 bg-gray-500 rounded-2xl pr-2 md:pr-4 ">
                     <input type="search" name="searchBar" id="searchBar" placeholder="Pesquisar" className="rounded-2xl bg-white text-h5 md:text-h3 py-2 md:py-4 pl-4 md:pl-8" />
-                    <button><img src="../src/assents/FiltroImg.png" alt="Filtro" /></button>
+                    <button><img src="../src/assets/FiltroImg.png" alt="Filtro" /></button>
                 </span>
 
                 <Button className="text-h5 md:text-h3 px-8" color="bg-primary text-second hover:text-primary">

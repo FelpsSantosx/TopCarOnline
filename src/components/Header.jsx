@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../assents/TopCarOnline_Logo.png'
+import logo from '../assets/TopCarOnline_Logo.png'
 
 const Header = () => {
     const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -32,7 +32,7 @@ const Header = () => {
 
     return (
 
-        <header className={`flex items-center justify-between fixed md:top-2 md:left-40 md:right-40 w-full md:w-auto py-2 md:py-1 px-5 md:px-10 md:rounded-lg bg-second text-fourth
+        <header className={`absolute z-10 flex items-center justify-between md:top-2 md:left-40 md:right-40 w-full md:w-auto py-2 md:py-1 px-5 md:px-10 md:rounded-lg bg-second text-fourth
             transition-transform duration-300 ease-in-out ${isHeaderVisible ? 'translate-y-0' : '-translate-y-40'} `}>
             <a href="/"><img src={logo} alt="LogoMarca" className='h-10 md:h-auto' /></a>
             <nav className='hidden md:flex space-x-10'>

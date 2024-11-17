@@ -1,4 +1,4 @@
-import logo from '../assents/TopCarOnline_Logo.png'
+import logo from '../assets/TopCarOnline_Logo.png'
 
 const Footer = () => {
 

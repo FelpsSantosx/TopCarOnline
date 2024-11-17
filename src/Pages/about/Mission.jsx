@@ -6,7 +6,7 @@ const Mission = () => {
                 Nossa missão é <strong className="text-third"> revolucionar </strong>  a forma como as pessoas
                 <strong className="text-third"> compram carros</strong> , oferecendo uma plataforma
                 conveniente, confiável e inovadora que atenda às necessidades dos clientes.</h2>
-            <img src="../src/assents/Personagem.png" alt="Personagem" className="w-36 h-40 md:w-auto md:h-auto"/>
+            <img src="../src/assets/Personagem.png" alt="Personagem" className="w-36 h-40 md:w-auto md:h-auto"/>
         </div>
 
     )
