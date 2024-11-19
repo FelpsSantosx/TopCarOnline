@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 blz
+# Local Netlify folder
+.netlify
