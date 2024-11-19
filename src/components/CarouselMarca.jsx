@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import BmwLogo from "../assets/BmwLogo.png"
 
 const CarouselMarca = () => {

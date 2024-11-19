@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import Frente from "../../assets/Frente.png"
 import Cadeiras from  "../../assets/Cadeiras.png"
 import Diagonal from "../../assets/DiagonalFrente.png"

@@ -1,3 +1,4 @@
+import React from "react"
 import LogoImage from "../../assets/TopCarImage.png"
 
 const AboutUs = () => {

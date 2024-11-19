@@ -1,3 +1,4 @@
+import React from "react"
 import GaleyCar from "./GaleryCar"
 import InfoModel from "./InfoModel"
 

@@ -1,3 +1,4 @@
+import React from "react"
 import logo from '../assets/TopCarOnline_Logo.png'
 
 const Footer = () => {

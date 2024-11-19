@@ -1,3 +1,4 @@
+import React from "react"
 import AboutUs from "./AboutUs"
 import HistoryAndvalor from "./HistoryAndvalor"
 import Info from "./Info"

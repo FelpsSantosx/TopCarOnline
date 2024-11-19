@@ -1,3 +1,4 @@
+import React from "react"
 import SuperDesconto from "../../assets/super-oferta.png"
 import Logo from "../../assets/TopCarOnline_Logo.png"
 import SuperOferta from "../../assets/oferta.png"

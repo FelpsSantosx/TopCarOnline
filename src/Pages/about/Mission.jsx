@@ -1,3 +1,4 @@
+import React from "react"
 import Personagem from "../../assets/Personagem.png"
 
 const Mission = () => {
