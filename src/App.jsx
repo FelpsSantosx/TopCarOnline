@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import React from "react"
-import CarDetails from "./pages/carDetails"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import CarDetails from "./pages/carDetails"
 import About from "./pages/about"
 import Home from "./pages/home"
 
