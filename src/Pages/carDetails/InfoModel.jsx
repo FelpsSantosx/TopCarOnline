@@ -1,3 +1,8 @@
+import SuperDesconto from "../../assets/super-oferta.png"
+import Logo from "../../assets/TopCarOnline_Logo.png"
+import SuperOferta from "../../assets/oferta.png"
+
+
 const InfoModel = () => {
     return (
         <section className="font-montserrat"> 
@@ -11,7 +16,7 @@ const InfoModel = () => {
                             <h3 className="text-h4 text-primary">Descrição</h3>
                         </div>
                         <div className="grid justify-end items-center">
-                            <img src="../src/assets/super-oferta.png" alt="Desconto" className="h-10" />
+                            <img src={SuperDesconto} alt="Desconto" className="h-10" />
                         </div>
                     </div>
                     <div className="bg-primary grid grid-cols-3 gap-5 text-left p-2">
@@ -52,7 +57,7 @@ const InfoModel = () => {
                             <h3 className="text-h5 text-sm ">COMPARE OS PREÇOS</h3>
                         </div>
                         <div className="grid justify-end items-center col-span-1 ">
-                            <img src="../src/assets/oferta.png" alt="Desconto" className="h-10" />
+                            <img src={SuperOferta} alt="Desconto" className="h-10" />
                         </div>
                     </div>
 
@@ -62,7 +67,7 @@ const InfoModel = () => {
                             <h2 className="text-h4">R$ 280.000</h2>
                         </div>
                         <div>
-                            <img src="../src/assets/TopCarOnline_Logo.png" alt="Logo" />
+                            <img src={Logo} alt="Logo" />
                         </div>
                         <div className="col-span-2">
                         <p className="text-h5 text-sm">Fipe</p>

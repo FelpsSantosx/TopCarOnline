@@ -1,14 +1,14 @@
 import { useState } from "react"
+import BmwLogo from "../assets/BmwLogo.png"
 
 const CarouselMarca = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const images = [
-    "../src/assets/BmwLogo.png",
-    "../src/assets/BmwLogo.png",
-    "../src/assets/BmwLogo.png",
-    "../src/assets/BmwLogo.png",
-    "../src/assets/BmwLogo.png",
+    BmwLogo,
+    BmwLogo,
+    BmwLogo,
+    BmwLogo,
   ]
 
   const visibleSlides = 3

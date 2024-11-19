@@ -1,14 +1,17 @@
 import { useState } from "react"
+import Frente from "../../assets/Frente.png"
+import Cadeiras from  "../../assets/Cadeiras.png"
+import Diagonal from "../../assets/DiagonalFrente.png"
 
 
 const GaleyCar = () => {
     const [activeGaleyIndex, setActiveGaleyIndex] = useState(0)
 
     const images = [
-        "../src/assets/Frente.png",
-        "../src/assets/Cadeiras.png",
-        "../src/assets/DiagonalFrente.png",
-        "../src/assets/DiagonalFrente.png",
+       Frente,
+       Cadeiras,
+       Diagonal,
+       Cadeiras,
     ]
     
 
