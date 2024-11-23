@@ -31,15 +31,15 @@ const GaleyCar = () => {
     }
 
     return (
-        <div className="relative w-full z-15 overflow-hidden">
+        <div className="relative w-full z-15 overflow-hidden max-w-screen-xl mx-auto ">
 
-        <div className="flex transition-transform duration-700 ease-in-out"
+        <div className="flex transition-transform duration-700 ease-in-out  "
           style={{
             transform: `translateX(-${(activeGaleyIndex * 100) / visibleGalery}%)`,
           }}
         >
           {images.map((src, index) => (
-            <div key={index} className="flex-shrink-0 w-1/3">
+            <div key={index} className="flex-shrink-0 w-1/3 ">
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
