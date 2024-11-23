@@ -13,7 +13,6 @@ const AboutUs = () => {
                     de compra fácil segura e transparente para nossos clientes.
                 </h2>
             </div>
-            <h2>a</h2>
         </section>
         
         
