@@ -1,7 +1,7 @@
 import React from "react"
 import LoginLogout from "./LoginLogout"
 
-const SigIn = () => {
+const SignIn = () => {
     return (
         <>
             <LoginLogout />
@@ -11,4 +11,4 @@ const SigIn = () => {
 }
 
 
-export default SigIn
+export default SignIn

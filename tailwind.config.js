@@ -9,7 +9,8 @@ module.exports = {
     extend: {
 
       colors: {
-        primary: "#f8fafc", // Ligth Winter
+        opacity: "rgba(248, 250, 252, 0.5)",
+        primary: "#f8fafc ", // Ligth Winter
         second: "#191BA9", // Blue Vibrant
         third: "#F66B07", // Orange
         fourth: "#fff", // Write
