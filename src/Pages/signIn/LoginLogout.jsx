@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from 'react-router-dom'
 import React from "react"
 import Button from "../../components/Button"
 
@@ -16,7 +17,7 @@ const LoginLogout = () => {
                     <input type="email" placeholder="e-mail" className="px-5 text-h4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                     <input type="password" placeholder="senha" className="px-5 text-h4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                     <div className="flex flex-col md:flex-row gap-4 md:justify-around">
-                        <a href="/" className="text-h4 text-sm md:text-h5 text-second">Esqueci minha senha</a>
+                        <Link className="text-h4 text-sm md:text-h5 text-second">Esqueci minha senha</Link>
                         <h5 className="text-h4 text-sm md:text-h5">Não tem uma conta?<Button onClick={() => setIsRegisterOpen(true)} className="text-h5 text-sm py-0 px-1" color="bg-primary text-second">Crie agora!</Button></h5>
                     </div>
                     <Button className="text-h5 rounded-3xl md:w-28">Entrar</Button>
