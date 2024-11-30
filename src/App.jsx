@@ -13,7 +13,7 @@ function App() {
 
     <>
 
-      <Router>
+      
         <Header />
         <Routes>
           <Route path="/" element={<Home />}/>
@@ -22,7 +22,7 @@ function App() {
           <Route path="/signIn" element={<SignIn />}/>
         </Routes>
         <Footer />
-      </Router>
+      
     
     </>
 
