@@ -7,6 +7,8 @@ import CarDetails from "./pages/carDetails"
 import Home from "./pages/home"
 import SignIn from "./pages/signIn"
 
+import "./app.css"
+
 function App() {
 
   return (
